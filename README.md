@@ -1,12 +1,13 @@
 # PROYECTO API REST MiBanco
 
-# Lenguajes y frameworks
+## Lenguajes y frameworks
 C#
 .NET Core 8.0 LTS
 
 
 ## Arquitectura
-la arquitectura está dividida por capas, cada una con una unica responsabilidad
+la arquitectura está dividida por capas, cada una con una unica responsabilidad.
+se usa inyección de dependencias para no depender de implementaciones sino de interfaces
 
 ### Capa DAO
 Esta capa se encarga del acceso a datos (archivos json)
@@ -17,7 +18,8 @@ Esta capa se encarga de la logica de negocio, utilizando su dao correspondiente 
 ### Capa Controllers
 Esta capa se sencarga de coordinar el flujo que el usuario lleva en la API
 
-
+## Capa Helpers
+aqui hay metodos auxiliares que se utilizan en algunos services
 
 
 ## Base de datos
@@ -25,5 +27,5 @@ Este proyecto no cuenta con una base de datos como tal, pero la simula mediante 
 
 ----------------------------------------------------------------------------------------------------------------
 
-# consideraciones xd
-
+## Consideraciones
+Importar el archivo postman para consultar los endpoints más comoda y rápidamente
